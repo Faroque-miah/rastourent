@@ -1,0 +1,31 @@
+
+/*==========COUNTER PART START================ */ 
+.counter_bg{
+    background: url(../images/counter.jpg) no-repeat center / cover;
+    padding: 100px 0;
+    position: relative;
+    z-index: -1;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:  rgba(0, 0, 0, 0.6);
+        z-index: -2;
+    }
+    .counter_text{
+        h3{
+            font-size: 38px;
+            font-family: var(--other_font);
+            color: var(--white);
+        }
+        p{
+            color: var(--shape_color);
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+    }
+}
+/*==========COUNTER PART ENDS================ */ 

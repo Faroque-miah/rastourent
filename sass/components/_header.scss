@@ -1,0 +1,64 @@
+/*==========HEADER PART START================ */ 
+#main_nav{
+    // background: black;
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 699;
+    .navbar-brand{
+        h3{
+            color: var(--shape_color);
+            font-size: 30px;
+            font-style: italic;
+        }
+    }
+    .navbar-nav{
+        // background:  rgba(240, 229, 223, 0.5);
+        padding: 20px 0;
+        .nav-item{
+         
+            margin-left: 20px;
+            .nav-link{
+                padding-right: .0rem;
+                padding-left: .0rem;
+                font-size: 18px;
+                font-weight: 500;
+                font-family: var(--main_font);
+                text-transform: uppercase;
+                color: white;
+                position: relative;
+                &:hover{
+                    color: var(--shape_color);
+                    &::before{
+                        width: 100%;
+                        bottom: 0;
+                        right: unset;
+
+                    }
+                }
+                &::before{
+                    content: '';
+                    position:absolute;
+                    bottom:0;
+                    right: 0;
+                    left: unset;
+                    height: 2px;
+                    width: 0%;
+                    transition: all linear 0.4s;
+                    background-color: var(--shape_color);
+                }
+             
+            }
+            .nav-link.active::before{
+                width: 100%;
+            }
+          
+        }
+    
+        
+    }
+}
+ 
+/*==========HEADER PART ENDS================ */ 

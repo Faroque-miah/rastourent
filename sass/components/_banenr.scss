@@ -1,0 +1,78 @@
+/*==========BANNER PART START================ */ 
+.banner_bg{
+    background: url(../images/banner.jpg) no-repeat center / cover;
+    position: relative;
+    padding: 300px 0;
+     z-index: 1;
+    &::after{
+        content: '';
+        position: absolute;
+        right:0;
+        top: 0;
+        width: 60%;
+        height: 100%;
+        margin: auto;
+        background-color: rgba(219, 112, 55, 0.363);
+        background-image: url(../images/banner2.jpg) #db703770;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+         
+        z-index: -1;
+        
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.71);
+        z-index: -1;
+    }
+    .banner_text{
+       
+         h1{
+             color: var(--shape_color);
+             font-size: 50px;
+             text-transform: capitalize;
+            font-family: var(--main_font);
+            background-color: var(--white);
+            line-height: 70px;
+            margin-bottom: 20px ;
+            text-align: center;
+         }
+         p{
+             color: var(--white);
+             font-family: var(--other_font);
+             text-transform: capitalize;
+             color: var(--white);
+             line-height: 26px;
+             margin-bottom: 25px;
+         }
+         .btn{
+             position: relative;
+             z-index: 1;
+             transition: all linear 0.4s;
+             &:hover{
+                 color: var(--shape_color);
+             }
+             &:hover::before{
+                 width: 100%;
+             }
+             &::before{
+                 content: '';
+                 height: 100%;
+                 width: 0%;
+                 background-color: var(--white);
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 z-index: -1;
+                 transition: all linear 0.4s;
+             }
+         }
+    }
+}
+/*==========BANNER PART ENDS================ */ 

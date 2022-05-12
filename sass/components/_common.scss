@@ -1,0 +1,65 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+:root{
+    --heading_color:#000000;
+    --white:#fff;
+    --overlay:#766964;
+    --shape_color:#DB7137;
+    --other_font:'Fira Sans', sans-serif;
+    --main_font: 'Roboto Condensed', sans-serif;;
+}
+::before,
+::after{
+    box-sizing: border-box;
+}
+h1{
+    font-weight: 700;
+    color: var(--white);
+}
+h2{
+    font-weight: 600;
+    color: var(--white);
+}
+h3,h4,h5,h6{
+    font-weight: 400;
+    color: var(--white);
+}
+p{
+    font-size: 16px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0  ;
+    margin: 0  ;
+    outline: 0.8;
+}
+ul,li{
+    list-style: none;
+}
+
+.sec_padding{
+    padding: 80px 0;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--shape_color);
+    text-align: center;
+    font-family: var(--main_font);
+    color: var(--white);
+    font-weight: 700;
+    border: 0;
+    border-radius: 0;
+
+}
+
+/*==================common css ends =============*/
